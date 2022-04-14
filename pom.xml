@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.java.app.lab4/com.java.app.lab4.HelloApplication</mainClass>
+                            <mainClass>com.java.app.lab4/com.java.app.lab4.ClientApp</mainClass>
                         </configuration>
                     </execution>
                 </executions>

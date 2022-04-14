@@ -2,21 +2,8 @@ package com.java.app.lab4;
 
 public class Service {
 
-//    public static void main(String[] args) {
-//        Service service = new Service();
-//        //double [][] array = {{5,7,3}, {7,0,1}, {8,1,2}};
-//        String toArray = "5 7 3 7 0 1 8 1 2";
-//        double [][] array = service.StringToArray(toArray);
-//
-//        for (float[] element : service.inversion(array,3)) {
-//            for (float number : element) {
-//                System.out.print(number + " ");
-//            }
-//            System.out.println();
-//        }
-//    }
-
     public String findMatrix(String string) {
+        try {
         Service service = new Service();
         StringBuilder matrix = new StringBuilder();
         for (float[] element : service.inversion(service.StringToArray(string), 3)) {
@@ -26,6 +13,10 @@ public class Service {
             matrix.append("\n");
         }
            return matrix.toString();
+        } catch (Exception e) {
+
+        }
+        return "Wrong matrix";
     }
 
     public double [][] StringToArray(String string) {

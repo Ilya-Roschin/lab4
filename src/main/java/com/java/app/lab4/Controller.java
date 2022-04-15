@@ -95,30 +95,4 @@ public class Controller {
 
     }
 
-//    private String connect(String inputString) {
-//        try {
-//
-//            Socket clientSocket = new Socket("127.0.0.1", 2525);
-//
-//            ObjectOutputStream coos =
-//                    new ObjectOutputStream(clientSocket.getOutputStream());//создание
-//
-//            ObjectInputStream cois =
-//                    new ObjectInputStream(clientSocket.getInputStream());//создание
-//
-//            String clientMessage = inputString;
-//            while (!clientMessage.equals("quite")) {
-//
-//                coos.writeObject(clientMessage);
-//                return cois.readObject().toString();
-//            }
-//            coos.close();
-//            cois.close();
-//            clientSocket.close();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
-
 }
